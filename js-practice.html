@@ -34,6 +34,52 @@
     let greeting = "My name is " + name;
     console.log(greeting);
 
+    console.log("Using functions:");
+    //function to make square numbers
+    function makeSquare(theNumb) {
+      let squared = theNumb * theNumb
+      return squared;
+    }
+    console.log(makeSquare(21));
+
+    let try01 = makeSquare(21);
+    console.log(try01);   
+
+    //Functions on my own 
+    function makeName(firstName, middleName, lastName) {
+      let fullName = firstName + " " + middleName + " " + lastName 
+      return fullName;
+    }
+    console.log(makeName("My", "Whole", "Name"));
+    console.log(makeName("Robert", "\"Beto\"", "O'Rourke"));
+  
+    // Make a name with middle initial
+    function makeBetterName(firstName, middleName, lastName) {
+      if (middleName.length === 1) {
+        middleName = middleName + ".";
+        let fullName = firstName + " " + middleName + " " + lastName;
+        return fullName;
+      } else {
+        let fullName = firstName + " " + middleName + " " + lastName;
+        return fullName;
+      }
+    }
+    console.log(makeBetterName("Joan", "Marie", "Larkin"));
+    console.log(makeBetterName("John", "F", "Kennedy"));
+
+    function gameResult(homeScore, awayScore) {
+      if (homeScore > awayScore) {
+       return "The home team won"; 
+      } else if (homeScore === awayScore) {
+        return "They tied";
+      } else {
+       return "The away team won"; 
+      } 
+    }
+    console.log(gameResult(0,8));
+    console.log(gameResult(2,2));
+    console.log(gameResult(5,1));
+
     </script>
 </body>
 </html>
